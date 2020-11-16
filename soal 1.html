@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function tombolAngka(){
+        var angka = document.getElementById('angka').value;
+        if (angka >= 1 && angka <= 4){
+        document.getElementById("result").innerHTML = '1<br>3  5<br>7  9  11';
+        } else {
+            document.getElementById("result").innerHTML = 'ERROR'
+        }
+    }
+    function tombolHuruf(){
+        var angka = document.getElementById('angka').value;
+        if (angka >= 1 && angka <= 4){
+        document.getElementById('result').innerHTML = 'B<br>D  F<br>H  J  L';
+        } else {
+            document.getElementById("result").innerHTML = 'ERROR'
+        }
+    }
+</script>
+<body>
+    <h1>PATTERN</h1><br>
+    <input type="number" placeholder="masukkan angka" id="angka"></input><br><br>
+    <button onclick="tombolAngka()">GANJIL</button>
+    <button onclick="tombolHuruf()">HURUF</button> <br><br>
+    <h1>RESULT :<br>
+    <p id="result"></p><h1></h1>
+</body>
+</html>
